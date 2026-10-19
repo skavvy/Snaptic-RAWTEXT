@@ -36,9 +36,9 @@ Next, decide the name of your mod. For the purpose of testing, you can just use
 │ │     │  ╰─ gdpatch_mod.toml                                                                   │
 │ │     ╰─ ...                                                                                   │
 │ │                                                                                              │
-│ ├─ snaptic.exe       (The packed executable, contains asset data and code)                     │
-│ ├─ snaptic.pck       (Encrypted asset data. Unused in current build)                           │
-│ ╰─ theora_mosh.dll   (Datamosh effect library)                                                 │
+│ ├─ snaptic.exe     (The packed executable, contains asset data and code)                       │
+│ ├─ snaptic.pck     (Encrypted asset data. Unused in current build)                             │
+│ ╰─ theora_mosh.dll (Datamosh effect library)                                                   │
 ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
       [  !IMPORTANT!  ] ¶ 3
