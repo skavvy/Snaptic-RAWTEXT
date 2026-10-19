@@ -1,6 +1,6 @@
 ┎───────────────────────┒
 ┃ ┌─┐╷ ╷┌─┐┌─┐╶┬╴╶┬╴┌─╴ ┃
-┃ └S┐│N│├A┤├P┘ T  I │C  ┠[ V1.0.4 ]
+┃ └S┐│N│├A┤├P┘ T  I │C  ┠[ V1.0.5 ]
 ┃ └─┘╵ ╵╵ ╵╵   ╵ ╶┴╴└─╴ ┃
 ┃ » RAWTEXT MOD GUIDE « ┃
 ┖───────────────────────┚
@@ -26,7 +26,7 @@ Next, decide the name of your mod. For the purpose of testing, you can just use
 "MyTestMod". This is defined as [MOD NAME].
 
 
-╭─────[ ⫎  FIGURE 1.0 ]──────────────────────────────────────────────────────────────────────────╮
+╭─────[ ⫎ FIGURE 1.0 ]──────────────────────────────────────────────────────────────────────────╮
 │ ./ [GAME DIRECTORY]                                                                            │
 │ ├─ GDPatch/                                                                                    │
 │ │  ╰─ mods/                                                                                    │
