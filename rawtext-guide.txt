@@ -1,6 +1,6 @@
 ┎───────────────────────┒
 ┃ ┌─┐╷ ╷┌─┐┌─┐╶┬╴╶┬╴┌─╴ ┃
-┃ └S┐│N│├A┤├P┘ T  I │C  ┠[ V1.0.6 ]
+┃ └S┐│N│├A┤├P┘ T  I │C  ┠[ V1.1.0 ]
 ┃ └─┘╵ ╵╵ ╵╵   ╵ ╶┴╴└─╴ ┃
 ┃ » RAWTEXT MOD GUIDE « ┃
 ┖───────────────────────┚
@@ -14,6 +14,8 @@ right angle brackets, like ‹./snaptic.pck›, is a path. Paths will be defined
 a UNIX-y way with (/) forward slashes. Paths are always local to your game
 directory, [GAME DIRECTORY], defined later in the file.
 
+    ==-== 1. SETUP ==-==
+
 
       [  !IMPORTANT!  ] ¶ 1
 Firstly, find your game directory. It can be easily found by going into Steam,
@@ -26,22 +28,42 @@ Next, decide the name of your mod. For the purpose of testing, you can just use
 "MyTestMod". This is defined as [MOD NAME].
 
 
-╭─────[ ⫎ FIGURE 1.0 ]───────────────────────────────────────────────────────────────────────────╮
-│ ./ [GAME DIRECTORY]                                                                            │
-│ ├─ GDPatch/                                                                                    │
-│ │  ╰─ mods/                                                                                    │
-│ │     ├─ [MOD NAME]/                                                                           │
-│ │     │  ├─ data.pck                                                                           │
-│ │     │  ├─ patcher.lua                                                                        │
-│ │     │  ╰─ gdpatch_mod.toml                                                                   │
-│ │     ╰─ ...                                                                                   │
-│ │                                                                                              │
-│ ├─ snaptic.exe     (The packed executable, contains asset data and code)                       │
-│ ├─ snaptic.pck     (Encrypted asset data. Unused in current build)                             │
-│ ╰─ theora_mosh.dll (Datamosh effect library)                                                   │
-╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─────[ ⫎ FIGURE 1.0 ]─────────────────────────────────────────────────────╮
+│ ./ [GAME DIRECTORY]                                                      │
+│ ├─ GDPatch/                                                              │
+│ │  ╰─ mods/                                                              │
+│ │     ├─ [MOD NAME]/ (Defined as [MOD DIRECTORY])                        │
+│ │     │  ├─ data.pck                                                     │
+│ │     │  ├─ patcher.lua                                                  │
+│ │     │  ╰─ gdpatch_mod.toml                                             │
+│ │     ╰─ ...                                                             │
+│ │                                                                        │
+│ ├─ snaptic.exe     (The packed executable, contains asset data and code) │
+│ ├─ snaptic.pck     (Encrypted asset data. Unused in current build)       │
+│ ╰─ theora_mosh.dll (Datamosh effect library)                             │
+╰──────────────────────────────────────────────────────────────────────────╯
 
       [  !IMPORTANT!  ] ¶ 3
 Set up your game directory to have a structure to look like [ FIGURE 1.0 ].
 Make sure to replace every variable with its definition, like [MOD NAME] and
 [GAME DIRECTORY]. Don't worry about GDPatch just yet, we'll get to that later.
+
+      [  !IMPORTANT!  ] ¶ 4
+Next up, let's get your [MOD] directory set up. Firstly, get your
+‹gdpatch_mod.toml› set up to look like [ FIGURE 1.1 ], replacing variables,
+of course. Replace [MOD ID] with your mod name converted to snake case, like
+"mod_name" instead of "Mod Name". Replace [AUTHOR NAME] with an online alias,
+or your real name, and [MOD DESCRIPTION] with a brief description of your mod.
+[MOD VERSION] is probably just "1.0.0" for now. Best practice is to have your
+version be SemVer, or Semantic Versioning. 1.0.0 is Major update 1, Minor
+update 0, Micro update 0. This is similar to how this document is versioned.
+
+╭─────[ ⫎ FIGURE 1.1 ]──────────────╮
+│ id = "[MOD ID]"                   │
+│                                   │
+│ [meta]                            │
+│ name = "[MOD NAME]"               │
+│ version = "[MOD VERSION]"         │
+│ authors = ["[AUTHOR NAME]"]       │
+│ description = "[MOD DESCRIPTION]" │
+╰───────────────────────────────────╯
