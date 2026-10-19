@@ -1,0 +1,47 @@
+┎───────────────────────┒
+┃ ┌─┐╷ ╷┌─┐┌─┐╶┬╴╶┬╴┌─╴ ┃
+┃ └S┐│N│├A┤├P┘ T  I │C  ┠[ V1.0.2 ]
+┃ └─┘╵ ╵╵ ╵╵   ╵ ╶┴╴└─╴ ┃
+┃ » RAWTEXT MOD GUIDE « ┃
+┖───────────────────────┚
+
+      [ -SKIPPABLE- ] ¶ FOREWARD
+The formatting of this text is somewhat specific. You can skip this foreward,
+but it might help to read through. When capitalized text is wrapped in square
+brackets, like [GAME DIRECTORY], that is a *specified directory*. You can
+always look back in the guide to see where it's defined. Any text wrapped in
+right angle brackets, like ‹./snaptic.pck›, is a path. Paths will be defined in
+a UNIX-y way with (/) forward slashes. Paths are always local to your game
+directory, [GAME DIRECTORY], defined later in the file.
+
+
+      [ !IMPORTANT! ] ¶ 1
+Firstly, find your game directory. It can be easily found by going into Steam,
+and going under *⚙  > Manage > Browse Local Files*. The directory opened in your
+file explorer is then defined here on as [GAME DIRECTORY].
+
+
+      [ RECOMMENDED ] ¶ 2
+Next, decide the name of your mod. For the purpose of testing, you can just use
+"MyTestMod". This is defined as [MOD NAME].
+
+
+╭─────[ FIGURE 1.0 ]─────────────────────────────────────────────────────────────────────────────╮
+│ ./ [GAME DIRECTORY]                                                                            │
+│ ├─ GDPatch/                                                                                    │
+│ │  ╰─ mods/                                                                                    │
+│ │     ├─ [MOD NAME]/                                                                           │
+│ │     │  ├─ data.pck                                                                           │
+│ │     │  ├─ patcher.lua                                                                        │
+│ │     │  ╰─ gdpatch_mod.toml                                                                   │
+│ │     ╰─ ...                                                                                   │
+│ │                                                                                              │
+│ ├─ snaptic.exe       (The packed executable, contains asset data and code)                     │
+│ ├─ snaptic.pck       (Encrypted asset data. Unused in current build)                           │
+│ ╰─ theora_mosh.dll   (Datamosh effect library)                                                 │
+╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+      [ !IMPORTANT! ] ¶ 3
+Set up your game directory to have a structure to look like [ FIGURE 1.0 ].
+Make sure to replace every variable with its definition, like [MOD NAME] and
+[GAME DIRECTORY]. Don't worry about GDPatch just yet, we'll get to that later.
